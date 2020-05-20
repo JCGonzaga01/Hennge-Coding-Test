@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* Search Field CSS */
+.SearchWrapper {
   align-items: center;
+  border: 1px solid #808080ad;
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 25px;
+  width: fit-content;
+}
+
+.SearchContainer {
+  padding: 10px 20px;
+  display: flex;
+}
+
+.SearchField {
+  margin-left: 5px;
+  border: none;
+  width: 180px;
+}
+
+.SearchIcon {
+  background: #8080802e;
+}
+
+/* Mail Container CSS */
+
+.ResultText {
+  font-weight: bold;
+  color: #5a5a5a;
+}
+
+.ResultTotal {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+hr {
+  height: 1px;
+  background-color: #38383836;
+  border: none;
+  margin: 10px 0 0 0;
+}
+
+.TableHeaderWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  border-bottom: 1px solid #d8d6d6;
+  cursor: pointer;
+}
+
+.TableRowHeader {
+  background: #8080801f;
+}
+
+.MultiAddressee {
+  background: gray;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 1px 2px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.SortedRowHeader {
+  color: #000000 !important;
+  font-weight: bold;
+}
+
+.DataHover:hover {
+  color: #0034dd;
+}
+
+/* Common CSS */
+.SpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TextEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.RowMargin15 {
+  margin-right: 15px;
+}
+
+.RowMargin5 {
+  margin-right: 5px;
+}
+
+.MarginBottom5 {
+  margin-bottom: 5px;
+}
+
+/* For PC and Tablet */
+@media only screen and (min-width: 744px) {
+  .App {
+    margin: 20px 50px;
+  }
+
+  .TableSortIcon {
+    margin-left: 5px;
+  }
+
+  .RowHeader {
+    color: #757575;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .FromRow {
+    width: 18%;
+  }
+
+  .ToRow {
+    width: 20%;
+  }
+
+  .SubjectRow {
+    width: 39%;
+  }
+
+  .DateRow {
+    width: 14%;
+  }
+}
+
+/* For SP */
+@media only screen and (max-width: 743px) {
+  .SPWrapper {
+    margin: 20px !important;
+  }
+
+  .SPResultText {
+    margin: 0 20px;
+  }
+
+  .SPTableWrapper {
+    padding: 10px  20px;
+  }
+
+  .HeaderWrapper {
+    padding: 10px 20px;
+    border-bottom: 1px solid #d8d6d6;
+  }
+  
+  .SPDataWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .SPSubjectText {
+    font-size: 18px;
+  }
+
+  .SPFromToWrapper {
+    width: 100%;
+  }
+
+  .SPSeparator {
+    margin-left: 5px;
+  }
+
+  .RowHeader::after {
+    content: ' |';
+    font-weight: normal !important;
+  }
+}
+
+.ContentWrapper {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  display: flex;
+  height: 75vh;
 }
