@@ -1,71 +1,105 @@
 [
   {
     "from": "aaa@example.com",
-    "to": ["zzz.zzz@example.com"],
+    "to": [
+      "zzz.zzz@example.com"
+    ],
     "subject": "[ HR-888 ] Notice of official announcement",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et. Lorem mollis aliquam ut porttitor leo a diam. Massa tempor nec feugiat nisl pretium fusce id. Diam vulputate ut pharetra sit amet. Dignissim sodales ut eu sem integer. Convallis a cras semper auctor neque vitae tempus. In nibh mauris cursus mattis molestie a iaculis at erat. Fringilla est ullamcorper eget nulla facilisi. Mi proin sed libero enim sed. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Eu feugiat pretium nibh ipsum consequat. Duis ultricies lacus sed turpis tincidunt id aliquet. Fermentum odio eu feugiat pretium nibh ipsum consequat. Aenean sed adipiscing diam donec adipiscing. Amet risus nullam eget felis. Vitae suscipit tellus mauris a diam maecenas sed enim. Quis varius quam quisque id diam vel quam elementum. Feugiat sed lectus vestibulum mattis ullamcorper velit sed. Neque aliquam vestibulum morbi blandit cursus risus. Ut porttitor leo a diam. Tellus id interdum velit laoreet id donec ultrices. Pharetra vel turpis nunc eget lorem dolor sed. Dignissim sodales ut eu sem integer. Adipiscing tristique risus nec feugiat in fermentum. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Ut faucibus pulvinar elementum integer enim neque. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. Sit amet cursus sit amet dictum sit amet justo donec. Eu facilisis sed odio morbi quis commodo odio aenean sed.",
     "date": "2020-05-21 00:20",
     "hasAttachment": false
   },
   {
     "from": "bbb.bbb@example.com",
-    "to": ["yyy@example.com"],
+    "to": [
+      "yyy@example.com"
+    ],
     "subject": "[web:333] 'Web Contact'",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et. Lorem mollis aliquam ut porttitor leo a diam. Massa tempor nec feugiat nisl pretium fusce id. Diam vulputate ut pharetra sit amet. Dignissim sodales ut eu sem integer. Convallis a cras semper auctor neque vitae tempus. In nibh mauris cursus mattis molestie a iaculis at erat. Fringilla est ullamcorper eget nulla facilisi. Mi proin sed libero enim sed. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Eu feugiat pretium nibh ipsum consequat. Duis ultricies lacus sed turpis tincidunt id aliquet. Fermentum odio eu feugiat pretium nibh ipsum consequat. Aenean sed adipiscing diam donec adipiscing. Amet risus nullam eget felis. Vitae suscipit tellus mauris a diam maecenas sed enim. Quis varius quam quisque id diam vel quam elementum. Feugiat sed lectus vestibulum mattis ullamcorper velit sed. Neque aliquam vestibulum morbi blandit cursus risus. Ut porttitor leo a diam. Tellus id interdum velit laoreet id donec ultrices. Pharetra vel turpis nunc eget lorem dolor sed. Dignissim sodales ut eu sem integer. Adipiscing tristique risus nec feugiat in fermentum. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Ut faucibus pulvinar elementum integer enim neque. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. Sit amet cursus sit amet dictum sit amet justo donec. Eu facilisis sed odio morbi quis commodo odio aenean sed.",
     "date": "2020-05-21 00:10",
     "hasAttachment": false
   },
   {
     "from": "ccc@example.com",
-    "to": ["xxx@example.com", "www.wwww@example.com"],
+    "to": [
+      "xxx@example.com",
+      "www.wwww@example.com"
+    ],
     "subject": "Happy New Year! Greetings for the New Year.",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et. Lorem mollis aliquam ut porttitor leo a diam. Massa tempor nec feugiat nisl pretium fusce id. Diam vulputate ut pharetra sit amet. Dignissim sodales ut eu sem integer. Convallis a cras semper auctor neque vitae tempus. In nibh mauris cursus mattis molestie a iaculis at erat. Fringilla est ullamcorper eget nulla facilisi. Mi proin sed libero enim sed. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Eu feugiat pretium nibh ipsum consequat. Duis ultricies lacus sed turpis tincidunt id aliquet. Fermentum odio eu feugiat pretium nibh ipsum consequat. Aenean sed adipiscing diam donec adipiscing. Amet risus nullam eget felis. Vitae suscipit tellus mauris a diam maecenas sed enim. Quis varius quam quisque id diam vel quam elementum. Feugiat sed lectus vestibulum mattis ullamcorper velit sed. Neque aliquam vestibulum morbi blandit cursus risus. Ut porttitor leo a diam. Tellus id interdum velit laoreet id donec ultrices. Pharetra vel turpis nunc eget lorem dolor sed. Dignissim sodales ut eu sem integer. Adipiscing tristique risus nec feugiat in fermentum. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Ut faucibus pulvinar elementum integer enim neque. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. Sit amet cursus sit amet dictum sit amet justo donec. Eu facilisis sed odio morbi quis commodo odio aenean sed.",
     "date": "2020-05-21 00:00",
     "hasAttachment": true
   },
   {
     "from": "ddd.dddd@example.com",
-    "to": ["vvv.vvvv@example.com", "uuu.uuu@example.com"],
+    "to": [
+      "vvv.vvvv@example.com",
+      "uuu.uuu@example.com"
+    ],
     "subject": "[HR-887(Revised: Office Expansion Project Team)] Notice of off...",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et. Lorem mollis aliquam ut porttitor leo a diam. Massa tempor nec feugiat nisl pretium fusce id. Diam vulputate ut pharetra sit amet. Dignissim sodales ut eu sem integer. Convallis a cras semper auctor neque vitae tempus. In nibh mauris cursus mattis molestie a iaculis at erat. Fringilla est ullamcorper eget nulla facilisi. Mi proin sed libero enim sed. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Eu feugiat pretium nibh ipsum consequat. Duis ultricies lacus sed turpis tincidunt id aliquet. Fermentum odio eu feugiat pretium nibh ipsum consequat. Aenean sed adipiscing diam donec adipiscing. Amet risus nullam eget felis. Vitae suscipit tellus mauris a diam maecenas sed enim. Quis varius quam quisque id diam vel quam elementum. Feugiat sed lectus vestibulum mattis ullamcorper velit sed. Neque aliquam vestibulum morbi blandit cursus risus. Ut porttitor leo a diam. Tellus id interdum velit laoreet id donec ultrices. Pharetra vel turpis nunc eget lorem dolor sed. Dignissim sodales ut eu sem integer. Adipiscing tristique risus nec feugiat in fermentum. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Ut faucibus pulvinar elementum integer enim neque. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. Sit amet cursus sit amet dictum sit amet justo donec. Eu facilisis sed odio morbi quis commodo odio aenean sed.",
     "date": "2020-01-01",
     "hasAttachment": false
   },
   {
     "from": "eee@example.com",
-    "to": ["sss@example.com", "ttt.tttt@example.com", "uuu.uuuu@example.com"],
+    "to": [
+      "sss@example.com",
+      "ttt.tttt@example.com",
+      "uuu.uuuu@example.com"
+    ],
     "subject": "[Github] Logout page",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et. Lorem mollis aliquam ut porttitor leo a diam. Massa tempor nec feugiat nisl pretium fusce id. Diam vulputate ut pharetra sit amet. Dignissim sodales ut eu sem integer. Convallis a cras semper auctor neque vitae tempus. In nibh mauris cursus mattis molestie a iaculis at erat. Fringilla est ullamcorper eget nulla facilisi. Mi proin sed libero enim sed. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Eu feugiat pretium nibh ipsum consequat. Duis ultricies lacus sed turpis tincidunt id aliquet. Fermentum odio eu feugiat pretium nibh ipsum consequat. Aenean sed adipiscing diam donec adipiscing. Amet risus nullam eget felis. Vitae suscipit tellus mauris a diam maecenas sed enim. Quis varius quam quisque id diam vel quam elementum. Feugiat sed lectus vestibulum mattis ullamcorper velit sed. Neque aliquam vestibulum morbi blandit cursus risus. Ut porttitor leo a diam. Tellus id interdum velit laoreet id donec ultrices. Pharetra vel turpis nunc eget lorem dolor sed. Dignissim sodales ut eu sem integer. Adipiscing tristique risus nec feugiat in fermentum. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Ut faucibus pulvinar elementum integer enim neque. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. Sit amet cursus sit amet dictum sit amet justo donec. Eu facilisis sed odio morbi quis commodo odio aenean sed.",
     "date": "2020-01-01",
     "hasAttachment": false
   },
   {
     "from": "fff.ffff@example.com",
-    "to": ["qqqq@example.com"],
+    "to": [
+      "qqqq@example.com"
+    ],
     "subject": "[dev]Postfix 3.1.12 / 3.2.9 / 3.3.4 / 3.4.5'",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et. Lorem mollis aliquam ut porttitor leo a diam. Massa tempor nec feugiat nisl pretium fusce id. Diam vulputate ut pharetra sit amet. Dignissim sodales ut eu sem integer. Convallis a cras semper auctor neque vitae tempus. In nibh mauris cursus mattis molestie a iaculis at erat. Fringilla est ullamcorper eget nulla facilisi. Mi proin sed libero enim sed. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Eu feugiat pretium nibh ipsum consequat. Duis ultricies lacus sed turpis tincidunt id aliquet. Fermentum odio eu feugiat pretium nibh ipsum consequat. Aenean sed adipiscing diam donec adipiscing. Amet risus nullam eget felis. Vitae suscipit tellus mauris a diam maecenas sed enim. Quis varius quam quisque id diam vel quam elementum. Feugiat sed lectus vestibulum mattis ullamcorper velit sed. Neque aliquam vestibulum morbi blandit cursus risus. Ut porttitor leo a diam. Tellus id interdum velit laoreet id donec ultrices. Pharetra vel turpis nunc eget lorem dolor sed. Dignissim sodales ut eu sem integer. Adipiscing tristique risus nec feugiat in fermentum. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Ut faucibus pulvinar elementum integer enim neque. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. Sit amet cursus sit amet dictum sit amet justo donec. Eu facilisis sed odio morbi quis commodo odio aenean sed.",
     "date": "2020-01-01",
     "hasAttachment": false
   },
   {
     "from": "ggg@example.com",
-    "to": ["ppp@example.com"],
+    "to": [
+      "ppp@example.com"
+    ],
     "subject": "Re: [Github] Brush-up on loading animation",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et. Lorem mollis aliquam ut porttitor leo a diam. Massa tempor nec feugiat nisl pretium fusce id. Diam vulputate ut pharetra sit amet. Dignissim sodales ut eu sem integer. Convallis a cras semper auctor neque vitae tempus. In nibh mauris cursus mattis molestie a iaculis at erat. Fringilla est ullamcorper eget nulla facilisi. Mi proin sed libero enim sed. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Eu feugiat pretium nibh ipsum consequat. Duis ultricies lacus sed turpis tincidunt id aliquet. Fermentum odio eu feugiat pretium nibh ipsum consequat. Aenean sed adipiscing diam donec adipiscing. Amet risus nullam eget felis. Vitae suscipit tellus mauris a diam maecenas sed enim. Quis varius quam quisque id diam vel quam elementum. Feugiat sed lectus vestibulum mattis ullamcorper velit sed. Neque aliquam vestibulum morbi blandit cursus risus. Ut porttitor leo a diam. Tellus id interdum velit laoreet id donec ultrices. Pharetra vel turpis nunc eget lorem dolor sed. Dignissim sodales ut eu sem integer. Adipiscing tristique risus nec feugiat in fermentum. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Ut faucibus pulvinar elementum integer enim neque. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. Sit amet cursus sit amet dictum sit amet justo donec. Eu facilisis sed odio morbi quis commodo odio aenean sed.",
     "date": "2020-01-01",
     "hasAttachment": true
   },
   {
     "from": "hhh.hhhh@example.com",
-    "to": ["ooo.oooo@example.com"],
+    "to": [
+      "ooo.oooo@example.com"
+    ],
     "subject": "Workplace Summary for sample, Inc.: Jun 2 - Jun 9",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et. Lorem mollis aliquam ut porttitor leo a diam. Massa tempor nec feugiat nisl pretium fusce id. Diam vulputate ut pharetra sit amet. Dignissim sodales ut eu sem integer. Convallis a cras semper auctor neque vitae tempus. In nibh mauris cursus mattis molestie a iaculis at erat. Fringilla est ullamcorper eget nulla facilisi. Mi proin sed libero enim sed. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Eu feugiat pretium nibh ipsum consequat. Duis ultricies lacus sed turpis tincidunt id aliquet. Fermentum odio eu feugiat pretium nibh ipsum consequat. Aenean sed adipiscing diam donec adipiscing. Amet risus nullam eget felis. Vitae suscipit tellus mauris a diam maecenas sed enim. Quis varius quam quisque id diam vel quam elementum. Feugiat sed lectus vestibulum mattis ullamcorper velit sed. Neque aliquam vestibulum morbi blandit cursus risus. Ut porttitor leo a diam. Tellus id interdum velit laoreet id donec ultrices. Pharetra vel turpis nunc eget lorem dolor sed. Dignissim sodales ut eu sem integer. Adipiscing tristique risus nec feugiat in fermentum. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Ut faucibus pulvinar elementum integer enim neque. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. Sit amet cursus sit amet dictum sit amet justo donec. Eu facilisis sed odio morbi quis commodo odio aenean sed.",
     "date": "2020-01-01",
     "hasAttachment": true
   },
   {
     "from": "iii@example.com",
-    "to": ["nnn@example.com"],
+    "to": [
+      "nnn@example.com"
+    ],
     "subject": "I love you",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et. Lorem mollis aliquam ut porttitor leo a diam. Massa tempor nec feugiat nisl pretium fusce id. Diam vulputate ut pharetra sit amet. Dignissim sodales ut eu sem integer. Convallis a cras semper auctor neque vitae tempus. In nibh mauris cursus mattis molestie a iaculis at erat. Fringilla est ullamcorper eget nulla facilisi. Mi proin sed libero enim sed. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Eu feugiat pretium nibh ipsum consequat. Duis ultricies lacus sed turpis tincidunt id aliquet. Fermentum odio eu feugiat pretium nibh ipsum consequat. Aenean sed adipiscing diam donec adipiscing. Amet risus nullam eget felis. Vitae suscipit tellus mauris a diam maecenas sed enim. Quis varius quam quisque id diam vel quam elementum. Feugiat sed lectus vestibulum mattis ullamcorper velit sed. Neque aliquam vestibulum morbi blandit cursus risus. Ut porttitor leo a diam. Tellus id interdum velit laoreet id donec ultrices. Pharetra vel turpis nunc eget lorem dolor sed. Dignissim sodales ut eu sem integer. Adipiscing tristique risus nec feugiat in fermentum. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Ut faucibus pulvinar elementum integer enim neque. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. Sit amet cursus sit amet dictum sit amet justo donec. Eu facilisis sed odio morbi quis commodo odio aenean sed.",
     "date": "2019-12-31",
     "hasAttachment": false
   },
   {
     "from": "Pablo-Diego-Jose-Francisco@example.com",
-    "to": ["Pablo-Diego-Jose-Francisco@example.com"],
+    "to": [
+      "Pablo-Diego-Jose-Francisco@example.com"
+    ],
     "subject": "[info:888] ABC EQUIPMENT COMPANY",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et. Lorem mollis aliquam ut porttitor leo a diam. Massa tempor nec feugiat nisl pretium fusce id. Diam vulputate ut pharetra sit amet. Dignissim sodales ut eu sem integer. Convallis a cras semper auctor neque vitae tempus. In nibh mauris cursus mattis molestie a iaculis at erat. Fringilla est ullamcorper eget nulla facilisi. Mi proin sed libero enim sed. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Eu feugiat pretium nibh ipsum consequat. Duis ultricies lacus sed turpis tincidunt id aliquet. Fermentum odio eu feugiat pretium nibh ipsum consequat. Aenean sed adipiscing diam donec adipiscing. Amet risus nullam eget felis. Vitae suscipit tellus mauris a diam maecenas sed enim. Quis varius quam quisque id diam vel quam elementum. Feugiat sed lectus vestibulum mattis ullamcorper velit sed. Neque aliquam vestibulum morbi blandit cursus risus. Ut porttitor leo a diam. Tellus id interdum velit laoreet id donec ultrices. Pharetra vel turpis nunc eget lorem dolor sed. Dignissim sodales ut eu sem integer. Adipiscing tristique risus nec feugiat in fermentum. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Ut faucibus pulvinar elementum integer enim neque. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. Sit amet cursus sit amet dictum sit amet justo donec. Eu facilisis sed odio morbi quis commodo odio aenean sed.",
     "date": "2019-12-31",
     "hasAttachment": false
   }

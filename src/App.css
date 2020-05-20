@@ -14,13 +14,14 @@
 }
 
 .SearchField {
-  margin-left: 5px;
+  margin-left: 10px;
   border: none;
-  width: 180px;
+  width: 100px;
 }
 
 .SearchIcon {
   background: #8080802e;
+  cursor: pointer;
 }
 
 /* Mail Container CSS */
@@ -40,6 +41,12 @@ hr {
   background-color: #38383836;
   border: none;
   margin: 10px 0 0 0;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }
 
 .TableHeaderWrapper {
@@ -97,6 +104,11 @@ hr {
   margin-bottom: 5px;
 }
 
+.AlignItemsCenter {
+  display: flex;
+  align-items: center;
+}
+
 /* For PC and Tablet */
 @media only screen and (min-width: 744px) {
   .App {
@@ -141,17 +153,15 @@ hr {
   }
 
   .SPTableWrapper {
-    padding: 10px  20px;
+    padding: 10px 20px;
   }
 
   .HeaderWrapper {
     padding: 10px 20px;
     border-bottom: 1px solid #d8d6d6;
   }
-  
+
   .SPDataWrapper {
-    display: flex;
-    align-items: center;
     margin-bottom: 10px;
   }
 
@@ -168,9 +178,40 @@ hr {
   }
 
   .RowHeader::after {
-    content: ' |';
+    content: " |";
     font-weight: normal !important;
   }
+}
+
+/* Open Mail Content CSS */
+.OMWrapper {
+  margin: 20px;
+}
+
+.OMSubject {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.OMContentWrapper {
+  margin: 15px 0;
+  text-indent: 30px;
+  word-break: break-all;
+}
+
+.OMBackWrapper {
+  margin-bottom: 15px;
+  color: green;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.OMBackWrapper:hover {
+  text-decoration: underline;
+}
+
+.OMBack {
+  transform: scaleX(-1);
 }
 
 .ContentWrapper {

@@ -8,18 +8,32 @@ import "./App.css";
 const MOMENT_FORMAT_DATE_TIME = "YYYY-MM-DD hh:mm";
 const MOMENT_FORMAT_DATE = "YYYY-MM-DD";
 
-const SearchField = () => {
+const SearchField = ({ onClickSearch }) => {
+  const [startDate, setStartDate] = useState("");
+  const [endDate, setEndDate] = useState("");
+
   return (
     <div className={classNames("SearchWrapper", "SPWrapper")}>
       <div className={"SearchContainer"}>
         <img src={Calendar} alt="calendar" width={20} height={20} />
         <input
           className={"SearchField"}
-          type="text"
-          placeholder={"YYYY/MM/DD - YYYY/MM/DD"}
+          type={"date"}
+          id={"startDate"}
+          onChange={(e) => setStartDate(e.target.value)}
+        />{" "}
+        -
+        <input
+          className={"SearchField"}
+          type={"date"}
+          id={"endDate"}
+          onChange={(e) => setEndDate(e.target.value)}
         />
       </div>
-      <div className={classNames("SearchContainer", "SearchIcon")}>
+      <div
+        className={classNames("SearchContainer", "SearchIcon")}
+        onClick={() => onClickSearch(startDate, endDate)}
+      >
         <img src={Search} alt="search" width={20} height={20} />
       </div>
     </div>
@@ -59,14 +73,16 @@ const sortMockData = (key, order = "asc") => {
 const App = () => {
   const [mockDataParse, setMockDataParse] = useState(mockData);
   const [sortHeader, setSortHeader] = useState("");
+  const [isOpenMail, setIsOpenMail] = useState(true);
+  const [selectedMail, setSelectedMail] = useState(mockDataParse[0]);
 
   const onSortData = (key, order = "asc") => {
     let updatedData = [...mockData];
-    let keyCheck = '';
+    let keyCheck = "";
     if (key !== sortHeader) {
       const tempMockData = [...mockDataParse];
       updatedData = tempMockData.sort(sortMockData(key, order));
-      keyCheck = key
+      keyCheck = key;
     }
     setMockDataParse(updatedData);
     setSortHeader(keyCheck);
@@ -90,15 +106,74 @@ const App = () => {
     return () => mediaQuerySP.removeListener(updateMediaQuery);
   }, []);
 
+  const onClickSearch = (startDate, endDate) => {
+    let tempData = [...mockData];
+    let updatedData = tempData;
+    if (!!startDate && !!endDate) {
+      updatedData = tempData.filter((item) =>
+        moment(item.date, MOMENT_FORMAT_DATE_TIME).isBetween(
+          startDate,
+          endDate,
+          "m",
+          "[]"
+        )
+      );
+    }
+    setMockDataParse(updatedData);
+  };
+
+  const openMailContent = (value, item) => {
+    setIsOpenMail(value);
+    setSelectedMail(item);
+  };
+
   return (
     <div className="App">
-      <SearchField />
+      <SearchField onClickSearch={onClickSearch} />
       <span className={classNames("ResultText", "SPResultText")}>
-        Results: <span className={"ResultTotal"}>{mockData.length}</span>{" "}
+        Results: <span className={"ResultTotal"}>{mockDataParse.length}</span>{" "}
         mail(s)
       </span>
       <hr />
-      {mockData.length ? (
+      {isOpenMail ? (
+        <div className={"OMWrapper"}>
+          <div
+            className={classNames("AlignItemsCenter", "OMBackWrapper")}
+            onClick={() => openMailContent(false, {})}
+          >
+            <img
+              className={"OMBack"}
+              src={Arrow02}
+              alt="Go Back"
+              width={13}
+              height={13}
+            />
+            <span>Back</span>
+          </div>
+          <div className={"OMSubject"}>{selectedMail.subject}</div>
+          <div className={"SpaceBetween"}>
+            <div className={"TextEllipsis"}>From: {selectedMail.from}</div>
+            <div className={"AlignItemsCenter"}>
+              <img
+                className={"RowMargin5"}
+                src={Clip}
+                alt="Attachment"
+                width={15}
+                height={15}
+              />
+              <span>
+                {moment(selectedMail.date).format(
+                  deviceType === "sp"
+                    ? "YYYY/MM/DD hh:mm A"
+                    : "DD MMM, YYYY hh:mm A"
+                )}
+              </span>
+            </div>
+          </div>
+          <div className={"TextEllipsis"}>To: {selectedMail.to}</div>
+          <div className={"OMContentWrapper"}>{selectedMail.content}</div>
+        </div>
+      ) : mockDataParse.length ? (
         <div>
           <div
             className={classNames(
@@ -192,6 +267,7 @@ const App = () => {
               <div
                 key={idx}
                 className={classNames("TableHeaderWrapper", "DataHover")}
+                onClick={() => openMailContent(true, item)}
               >
                 <div
                   className={classNames(
@@ -200,7 +276,11 @@ const App = () => {
                     "TextEllipsis"
                   )}
                 >
-                  <span className={sortHeader === "from" && "SortedRowHeader"}>
+                  <span
+                    className={
+                      sortHeader === "from" ? "SortedRowHeader" : undefined
+                    }
+                  >
                     {item.from}
                   </span>
                 </div>
@@ -222,7 +302,11 @@ const App = () => {
                       </div>
                     </div>
                   ) : (
-                    <span className={sortHeader === "to" && "SortedRowHeader"}>
+                    <span
+                      className={
+                        sortHeader === "to" ? "SortedRowHeader" : undefined
+                      }
+                    >
                       {item.to}
                     </span>
                   )}
@@ -262,8 +346,11 @@ const App = () => {
               <div
                 key={idx}
                 className={classNames("HeaderWrapper", "DataHover")}
+                onClick={() => openMailContent(true, item)}
               >
-                <div className={"SPDataWrapper"}>
+                <div
+                  className={classNames("SPDataWrapper", "AlignItemsCenter")}
+                >
                   <img
                     className={"RowMargin5"}
                     src={MailSP}
@@ -323,7 +410,9 @@ const App = () => {
                         </div>
                       ) : (
                         <span
-                          className={sortHeader === "to" && "SortedRowHeader"}
+                          className={
+                            sortHeader === "to" ? "SortedRowHeader" : undefined
+                          }
                         >
                           {item.to}
                         </span>
