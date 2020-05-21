@@ -73,7 +73,7 @@ const sortMockData = (key, order = "asc") => {
 const App = () => {
   const [mockDataParse, setMockDataParse] = useState(mockData);
   const [sortHeader, setSortHeader] = useState("");
-  const [isOpenMail, setIsOpenMail] = useState(true);
+  const [isOpenMail, setIsOpenMail] = useState(false);
   const [selectedMail, setSelectedMail] = useState(mockDataParse[0]);
 
   const onSortData = (key, order = "asc") => {
