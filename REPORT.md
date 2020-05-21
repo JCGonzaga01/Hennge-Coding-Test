@@ -31,3 +31,13 @@ Below are the implementation made:
 
  1. Created IMPROVEMENTS.md file
  2. Listed down all possible improvement scan be implemented
+
+# Mission 4: Submit your solution
+
+Below are the tasks made:
+
+ 1. Read RFC documents
+ 2. Study how TOTP works and benefits of it
+ 3. Study Python programming
+ 4. Created python program to generate TOTP password
+ 5. Made HTTP Request to submit code
